@@ -14,19 +14,25 @@
 // }
 
 //Steg 3
-Console.Write("Ange användarnamn: ");
-string username = Console.ReadLine();
+// Console.Write("Ange användarnamn: ");
+// string username = Console.ReadLine();
 
-Console.Write("Ange lösenord: ");
-string password = Console.ReadLine();
+// Console.Write("Ange lösenord: ");
+// string password = Console.ReadLine();
 
-if (username == "kalleanka" && password == "12345")
+// if (username == "kalleanka" && password == "12345")
+// {
+//     Console.WriteLine("Welcome!");
+// }
+// else
+// {
+//     Console.WriteLine("Wrong username or password");
+// }
+
+//Steg 4
+for (int i = 0; i < 32; i++)
 {
-    Console.WriteLine("Welcome!");
-}
-else
-{
-    Console.WriteLine("Wrong username or password");
+    Console.WriteLine("Hello, World");
 }
 
 
