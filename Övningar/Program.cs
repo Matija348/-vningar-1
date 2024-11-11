@@ -30,10 +30,17 @@
 // }
 
 //Steg 4
-for (int i = 0; i < 32; i++)
+// for (int i = 0; i < 32; i++)
+// {
+//     Console.WriteLine("Hello, World");
+// }
+
+//Steg 5
+int count = 0;
+while (count < 32)
 {
     Console.WriteLine("Hello, World");
+    count++;
 }
-
 
 
