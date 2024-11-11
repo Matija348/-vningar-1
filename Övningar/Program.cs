@@ -51,16 +51,28 @@
 // Console.WriteLine("Rätt lösenord!");
 
 //Steg 6
-for (int i = 0; i < 5; i++)
-{
-    Console.Write("Skriv in ett tal: ");
-    int number = int.Parse(Console.ReadLine());
+// for (int i = 0; i < 5; i++)
+// {
+//     Console.Write("Skriv in ett tal: ");
+//     int number = int.Parse(Console.ReadLine());
 
-    if (number > 5)
-    {
-        Console.WriteLine("högre än 5!");
-    }
-}
+//     if (number > 5)
+//     {
+//         Console.WriteLine("högre än 5!");
+//     }
+// }
+
+//Steg 7
+string input;
+
+do
+{
+    Console.Write("Ange ett heltal: ");
+    input = Console.ReadLine();
+} 
+while (!int.TryParse(input, out _));
+
+Console.WriteLine("Du angav ett korrekt tal.");
 
 
 
