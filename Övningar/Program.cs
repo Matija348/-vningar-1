@@ -38,16 +38,29 @@
 
 
 //Steg 5
-string correctPassword = "12345";
-string inputPassword;
+// string correctPassword = "12345";
+// string inputPassword;
 
-do
+// do
+// {
+//     Console.Write("Ange lösenord: ");
+//     inputPassword = Console.ReadLine();
+// } 
+// while (inputPassword != correctPassword);
+
+// Console.WriteLine("Rätt lösenord!");
+
+//Steg 6
+for (int i = 0; i < 5; i++)
 {
-    Console.Write("Ange lösenord: ");
-    inputPassword = Console.ReadLine();
-} 
-while (inputPassword != correctPassword);
+    Console.Write("Skriv in ett tal: ");
+    int number = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Rätt lösenord!");
+    if (number > 5)
+    {
+        Console.WriteLine("högre än 5!");
+    }
+}
+
 
 
