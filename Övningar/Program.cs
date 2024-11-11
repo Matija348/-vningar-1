@@ -63,16 +63,50 @@
 // }
 
 //Steg 7
-string input;
+// string input;
 
-do
+// do
+// {
+//     Console.Write("Ange ett heltal: ");
+//     input = Console.ReadLine();
+// } 
+// while (!int.TryParse(input, out _));
+
+// Console.WriteLine("Du angav ett korrekt tal.");
+
+//Steg 8
+Random random = new Random();
+int secretNumber = random.Next(1, 101);  
+int guess = -1;
+
+Console.WriteLine("Gissa siffran (mellan 1 och 100)!");
+
+while (guess != secretNumber)
 {
-    Console.Write("Ange ett heltal: ");
-    input = Console.ReadLine();
-} 
-while (!int.TryParse(input, out _));
+    Console.Write("Ange din gissning: ");
+    string input = Console.ReadLine();
 
-Console.WriteLine("Du angav ett korrekt tal.");
+    // Kontrollera att inmatningen är ett heltal
+    if (int.TryParse(input, out guess))
+    {
+        if (guess < secretNumber)
+        {
+            Console.WriteLine("För lågt! Försök igen.");
+        }
+        else if (guess > secretNumber)
+        {
+            Console.WriteLine("För högt! Försök igen.");
+        }
+        else
+        {
+            Console.WriteLine("Grattis! Du gissade rätt!");
+        }
+    }
+    else
+    {
+        Console.WriteLine("Ogiltig inmatning. Ange ett heltal.");
+    }
+}
 
-
+Console.ReadLine();
 
