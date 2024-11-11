@@ -35,12 +35,19 @@
 //     Console.WriteLine("Hello, World");
 // }
 
+
+
 //Steg 5
-int count = 0;
-while (count < 32)
+string correctPassword = "12345";
+string inputPassword;
+
+do
 {
-    Console.WriteLine("Hello, World");
-    count++;
-}
+    Console.Write("Ange lösenord: ");
+    inputPassword = Console.ReadLine();
+} 
+while (inputPassword != correctPassword);
+
+Console.WriteLine("Rätt lösenord!");
 
 
